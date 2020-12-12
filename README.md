@@ -85,4 +85,8 @@ Footer:
  CV
  Social links
  
-
+### Structure
+#### Wireframes
+[Home](/assets/wireframes/hack-home.pdf)
+[Projects](/assets/wireframes/hack-projects.pdf)
+[Contact](/assets/wireframes/hack-contact.pdf)

@@ -1,6 +1,149 @@
 :root{
     --lightgrey: #ccc;
+    --blueblack: #343444;
+    --darkblue: #4b5b6e;
     --buttongreen: #36b636;
+}
+
+.bg--blue {
+    background-color: var(--darkblue);
+}
+
+body {
+    background-color: var(--lightgrey);
+}
+
+/* Header */
+
+.navbar {
+    min-height: 12vh;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--lightgrey);
+    font-weight: 300;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--lightgrey);
+    font-weight: 300;
+}
+
+/* Intro image */
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+.intro-image-container {
+    height: 65vh;
+
+    background: url('../images/leafgirl.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.intro-image-content {
+    z-index: 1;
+}
+
+.intro-image-header {
+    color: var(--lightgrey);
+    font-weight: 300;
+    text-align: center;
+    z-index: 2;
+}
+
+.intro-image-lead {
+    color: var(--lightgrey);
+    font-weight: 200;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Intro Text */
+
+.intro-container {
+    color: var(--blueblack);
+    text-align: center;
+}
+
+#about-me-header,
+#my-work-header {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 7.5vw;
+    margin-top: 1rem;
+}
+
+#about-me-text,
+#my-work-text {
+    font-weight: 300;
+    font-size: 4.5vw;
+    margin-top: 1rem;
+}
+
+.block-divider {
+    width: 50%;
+    height: 5px;
+    border: 5px;
+    background-color: var(--blueblack);
+    margin-top: 0;
+}
+
+/* Footer */
+
+.footer {
+    min-height: 12vh;
+    text-align: center;
+}
+
+#footer-nav {
+    margin-top: 1rem;
+}
+
+#footer-nav .list-inline-item a {
+    text-decoration: none;
+    color: var(--lightgrey);
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0 0.2rem;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i {
+    font-size: 3vh;
+    padding: 0 0.2rem;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#social-media-list .list-inline-item i {
+    text-decoration: none;
+    color: var(--lightgrey);
+}
+
+#footer-nav .list-inline-item a:hover,
+#social-media-list .list-inline-item i:hover {
+    color: var(--buttongreen);
 }
 
 /*--- Contact.html ---*/
@@ -38,11 +181,112 @@
     padding-bottom: 5%;
 }
 
-#contact button{
+#contact,.projects button{
     width: 100%;
     background-color: var(--buttongreen);
     border: 1px solid  var(--buttongreen);
     border-radius: 5px;
     color: #fff;
     padding: 1%;
+}
+
+/*--- Projects.html ---*/
+
+.projects{
+    text-align: center;
+}
+
+.projects .col-12, .col-md-6{
+    margin: 2% auto;
+    padding: 5%;
+    background-color: var(--lightgrey);
+    border: 1px solid var(--lightgrey);
+    border-radius: 5px;
+}
+
+#Projintro{
+    margin: 5% auto;
+}
+
+.val{
+    font-weight: 300;
+    color: var(--blueblack);
+}
+
+.projects img{
+    display: block;
+    margin: 2% auto;
+    width: 50%;
+    height: auto;
+}
+
+.projects ul{
+    margin: 5% 0%;
+    padding: 0;
+}
+
+.projects li{
+    list-style-type: none;
+}
+
+.projects button{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+
+@media (min-width:576px){
+    #about-me-header,
+    #my-work-header {
+        font-size: 6.5vw;
+    }
+    #about-me-text,
+    #my-work-text {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width:768px){
+    #about-me-header,
+    #my-work-header {
+        font-size: 6vw;
+    }
+    #about-me-text,
+    #my-work-text {
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width:992px){
+    #about-me-header,
+    #my-work-header {
+        font-size: 5vw;
+    }
+    #about-me-text,
+    #my-work-text {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width:1200px){
+    #about-me-header,
+    #my-work-header {
+        font-size: 3vw;
+    }
+    #about-me-text,
+    #my-work-text {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width:1400px){
+    #about-me-header,
+    #my-work-header {
+        font-size: 3vw;
+    }
+    #about-me-text,
+    #my-work-text {
+        font-size: 1.5vw;
+    }
 }

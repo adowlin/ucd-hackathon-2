@@ -1,0 +1,41 @@
+
+
+/*--- Contact.html ---*/
+
+.contactintro{
+    margin: 5% auto;
+    text-align: center;
+    font-size: 175%;
+    font-weight: 200;
+}
+
+.contactintro h2{
+    margin-bottom: 2%;
+}
+
+#contact{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+#contact input{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 1%;
+    width: 80%;
+    margin: 2% auto;
+}
+
+#contact #message{
+    padding-bottom: 5%;
+}
+
+#contact button{
+    width: 80%;
+    background-color: rgb(54, 182, 54);
+    color: white;
+    padding: 1%;
+}

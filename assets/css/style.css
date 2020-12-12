@@ -1,4 +1,7 @@
-
+:root{
+    --lightgrey: #ccc;
+    --buttongreen: #36b636;
+}
 
 /*--- Contact.html ---*/
 
@@ -14,8 +17,8 @@
 }
 
 #contact{
-    border: 1px solid #ccc;
-    background-color: #ccc;
+    border: 1px solid var(--lightgrey);
+    background-color: var(--lightgrey);
     border-radius: 5px;
     padding: 5%;
     width: 90%;
@@ -37,9 +40,9 @@
 
 #contact button{
     width: 100%;
-    background-color: rgb(54, 182, 54);
-    border: 1px solid  rgb(54, 182, 54);
+    background-color: var(--buttongreen);
+    border: 1px solid  var(--buttongreen);
     border-radius: 5px;
-    color: white;
+    color: #fff;
     padding: 1%;
 }

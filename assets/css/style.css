@@ -40,6 +40,11 @@ a:hover{
     font-weight: 300;
 }
 
+.navbar-brand{
+    font-family: 'teko', open-sans;
+    font-size: 250%;
+}
+
 /* Intro image */
 
 .opaque-overlay {

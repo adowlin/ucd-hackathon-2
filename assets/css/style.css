@@ -18,6 +18,8 @@
     background-color: #ccc;
     border-radius: 5px;
     padding: 5%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #contact input{
@@ -25,7 +27,7 @@
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 1%;
-    width: 80%;
+    width: 100%;
     margin: 2% auto;
 }
 
@@ -34,8 +36,10 @@
 }
 
 #contact button{
-    width: 80%;
+    width: 100%;
     background-color: rgb(54, 182, 54);
+    border: 1px solid  rgb(54, 182, 54);
+    border-radius: 5px;
     color: white;
     padding: 1%;
 }

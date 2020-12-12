@@ -4,6 +4,7 @@
     --blueblack: #343444;
     --darkblue: #4b5b6e;
     --buttongreen: #36b636;
+    --link: #b83ab8;
 }
 
 .bg--blue {
@@ -16,6 +17,11 @@ body {
 
 a{
     text-decoration: none;
+    color: var(--link);
+}
+
+a:hover{
+    color: var(--buttongreen);
 }
 
 /* Header */
@@ -199,7 +205,7 @@ a{
 
 .projects{
     text-align: center;
-    margin: 2% 0;
+    margin: 2% auto;
 }
 
 .projects .col-12, .col-md-6{
@@ -208,10 +214,6 @@ a{
     background-color: var(--lightergrey);
     border: 1px solid var(--lightergrey);
     border-radius: 5px;
-}
-
-#Projintro{
-    margin: 5% auto;
 }
 
 .val{
@@ -233,9 +235,22 @@ a{
 
 .projects li{
     list-style-type: none;
+    display: inline;
+    float: left;
+    margin-left: 11%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.projects li i{
+    font-size: 150%;
+    display: block;
+    margin: 0 auto;
 }
 
 .projects button{
+    display: block;
+    clear: both;
     width: 50%;
     margin: 0 auto;
     background-color: var(--buttongreen);
